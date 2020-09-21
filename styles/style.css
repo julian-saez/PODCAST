@@ -14,8 +14,10 @@ body {
 
 a {
   font-size: 1rem;
+  color: black;
   font-family: 'IBM Plex Mono', monospace;
   font-weight: bold;
+  text-decoration: none;
 }
 
 p {
@@ -628,6 +630,13 @@ li a:hover {
   }
   #presentation button:hover {
     background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  }
+  #presentation button {
+    color: black;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+  #presentation a:hover {
     color: white;
   }
   .menu {
