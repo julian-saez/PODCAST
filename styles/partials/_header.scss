@@ -1,0 +1,156 @@
+#logo {
+    @media (max-width: 480px) {
+        align-items: center;
+        padding-left: 16px;
+    }
+
+    @media (min-width: 480px) and (max-width: 768px) {
+        align-items: center;
+        padding-left: 36px;
+    }
+
+    @media (min-width: 1020px) {
+        padding: 34.72px 0px 34.72px 100px;
+    }
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: all 500ms ease;
+}
+
+li a:hover {
+    text-decoration: line-through;
+    color: #00F3BB;
+}
+
+@media (min-width: 1020px) {
+    header {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    input {
+        display: none;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding-left: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        position: fixed;
+        width: 100%;
+        height: 48px;
+        background: rgb(255, 255, 255);
+        top: 0;
+        z-index: 2;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        align-items: center;
+        margin-right: 3%;
+    }
+
+    header nav .menu ul {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        list-style: none;
+        background: #f2f2f2;
+        height: 100vh;
+        transform: translateX(-100%);
+        transition: height 0.5s ease;
+    }
+
+    .menu ul li {
+        position: relative;
+    }
+
+    .menu ul li:hover {
+        background-color: #bbbbbb;
+    }
+
+    .menu a {
+        position: relative;
+        text-decoration: none;
+        color: #000;
+        padding: 16px 5%;
+        line-height: 28px;
+        display: block;
+    }
+
+    .menu a:hover {
+        color: #fff;
+    }
+
+    /* Animación de despliegue */
+
+    input[type="checkbox"]:checked ~ ul {
+        height: 240px;
+        transform: translateX(0);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    nav .menu {
+        padding-top: 3px;
+    }
+
+    .menu input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        opacity: 0;
+        z-index: 2;
+        position: absolute;
+    }
+
+    .menu span {
+        display: block;
+        width: 25px;
+        height: 2.5px;
+        margin-bottom: 6.5px;
+        position: relative;
+        background-color: #000;
+        z-index: 1;
+        transform-origin: 3px 0px;
+        transition: transform 0.5s ease;
+            opacity: 0.55s ease;
+    }
+
+    .menu span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    .menu span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(2px, 1px);
+    }
+
+    .menu input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    .menu input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(1px, 0px);
+    }
+}

@@ -1,0 +1,98 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body {
+    width: 100%;
+    font-size: 12px;
+}
+
+a {
+    font-size: 1rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+}
+
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+
+    @media (max-width: 480px) {
+        font-size: 0.88rem;
+    }
+
+    @media (min-width: 480px) and (max-width: 768px) {
+        font-size: 1rem;
+    }
+
+    @media (min-width: 1020px) {
+        font-size: 1rem;
+    }
+}
+
+button {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bolder;
+    background: #00F3BB;
+    border: 0px solid #00F3BB;
+}
+
+h1, h2 ,h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: lighter;
+}
+
+h1 {
+    @media (max-width: 480px) {
+        font-size: 2.25rem;
+    }
+
+    @media (min-width: 480px) and (max-width: 768px) {
+        font-size: 3rem;
+    }
+
+    @media (min-width: 1020px) {
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    @media (max-width: 480px) {
+        font-size: 2.25rem;
+    }
+
+    @media (min-width: 480px) and (max-width: 768px) {
+        font-size: 2.50rem;
+    }
+
+    @media (min-width: 1020px) {
+        font-size: 3rem;
+    }
+}
+
+h3 {
+    font-weight: bolder;
+    @media (max-width: 480px) {
+        font-size: 1.5rem;
+    }
+
+    @media (min-width: 480px) and (max-width: 768px) {
+        font-size: 1.17rem;
+    }
+
+    @media (min-width: 1020px) {
+        font-size: 1.5rem;
+    }
+}
+
+.flex-container {
+    display: flex;
+}
+
+.grid-container {
+    display: grid;
+}
