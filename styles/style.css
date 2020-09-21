@@ -354,7 +354,7 @@ li a:hover {
     width: auto;
     height: auto;
     max-width: 298px;
-    min-height: 160px;
+    min-height: 170px;
     padding-bottom: 11px;
     margin: auto;
     border: 0;
@@ -449,7 +449,12 @@ li a:hover {
     padding: 128px 16px 0 16px;
   }
   #news-section button {
-    width: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 56px;
     padding: 13px 43px;
     margin-top: 36px;

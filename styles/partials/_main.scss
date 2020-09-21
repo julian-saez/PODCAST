@@ -59,7 +59,7 @@
         width: auto;
         height: auto;
         max-width: 298px;
-        min-height: 160px;
+        min-height: 170px;
         padding-bottom: 11px;
         margin: auto;
         border: 0;
@@ -147,7 +147,8 @@
     }
 
     #news-section button {
-        width: 80%;
+        justify-content: center;
+        align-items: center;
         height: 56px;
         padding: 13px 43px;
         margin-top: 36px;
